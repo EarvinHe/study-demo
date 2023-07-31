@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			
+			function create(name,age,gender)
+			{
+				var obj = new Object();
+					obj.name=name;
+					obj.age=age ;
+					obj.gender=gender;
+				obj.sayName = function(){
+					alert(this.name);
+				}
+				return obj;
+			}
+			var obj1 = create("孙悟空",4000,"男");
+			var obj2 = create("沙和尚",3000,"男");
+			var obj3 = create("猪八戒",2000,"男");
+			console.log(obj3)
+			obj2.sayName();
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

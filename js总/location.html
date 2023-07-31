@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			window,onload = function(){
+				 var loc = document.getElementById("loc");
+				 loc.onclick = function(){
+					 // alert(location);//如果获取location则可以获取当前页面的完整路径信息；
+					 
+							location = "https://www.bilibili.com/";
+							// location = "01.BOM.html";
+						/* location属性：
+						 assign():用来跳转到其他页面，作用和直接修改location一样
+						 replace()跳转页面，不能回去*/
+							
+				 }
+			}
+		</script>
+	</head>
+	<body>
+		<button type="button"id="loc">location</button>
+	</body>
+</html>

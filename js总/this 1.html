@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			var name = "唐僧";
+			
+			function fun(){
+				// console.log(name);
+				console.log(this.name);
+			}
+			
+			var obj = {
+				name:"孙悟空",
+				sayName:fun
+			}
+			
+			var obj2 = {
+				name:"猪八戒",
+				sayName:fun
+			}
+			
+			//如我想调用obj2的name
+			// obj2.sayName();
+			/* 此时因为全局变量name是唐僧，而fun
+			里面调用的是name，并不能输出obj2里的name； */
+			
+			obj.sayName();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
